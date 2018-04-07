@@ -88,7 +88,7 @@ public class AssignCommand extends UndoableCommand implements PopulatableCommand
     @Override
     public CommandResult executeUndoableCommand() throws CommandException {
         try {
-            deletePrevRunnerCustomer();
+            deletePrevRunnerCustomer(); //this must be called BEFORE updating assigned customers in the loop below
             model.updatePerson(personToEdit, editedPerson);
             int i = 0;
             for (Person c : newCustomers) {

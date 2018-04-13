@@ -1,8 +1,8 @@
 * {
-  -main-colour: #F6F6ED; /*cream*/
-  -contrast-colour: #000000; /*black (mainly for text)*/
-  -borders-colour: #F0E1E1; /*pink*/
-  -thematic-colour: #8D0B0B /*dark red*/
+  -main-colour: #FC9B76;
+  -contrast-colour: #000000;
+  -borders-colour: #FFC4AD;
+  -thematic-colour: #FFC4AD;
 }
 
 .background {
@@ -111,7 +111,7 @@
 }
 
 .list-cell:filled:odd {
-    -fx-background-color: derive(-thematic-colour, 120%);
+    -fx-background-color: derive(-main-colour, 50%);
 }
 
 .list-cell:filled:selected {

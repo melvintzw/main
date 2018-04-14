@@ -7,13 +7,13 @@
 
 .background {
     -fx-background-color: derive(-main-colour, 0%);
-    background-color: #F6F6ED; /* Used in the default.html file */
+    background-color: grey; /* Used in the default.html file */
 }
 
 .label {
     -fx-font-size: 11pt;
     -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: #555555;
+    -fx-text-fill: 555555;
     -fx-opacity: 0.9;
 }
 
@@ -107,6 +107,7 @@
     -fx-border-color: -borders-colour;
 }
 
+/*@@author melvintzw */
 .customerCard {
     -fx-label-padding: 0 0 0 0;
     -fx-graphic-text-gap : 0;
@@ -125,6 +126,7 @@
     -fx-background-color: derive(-main-colour, -25%);
     -fx-border-color: yellow;
 }
+/*@@author*/
 
 /*
 .list-cell:filled:even {

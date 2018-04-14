@@ -104,8 +104,29 @@
     -fx-label-padding: 0 0 0 0;
     -fx-graphic-text-gap : 0;
     -fx-padding: 0 0 0 0;
+    -fx-border-color: -borders-colour;
 }
 
+.customerCard {
+    -fx-label-padding: 0 0 0 0;
+    -fx-graphic-text-gap : 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: derive(-main-colour, 0%);
+}
+
+.runnerCard {
+    -fx-label-padding: 0 0 0 0;
+    -fx-graphic-text-gap : 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: derive(-main-colour, 50%);
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: derive(-main-colour, -25%);
+    -fx-border-color: yellow;
+}
+
+/*
 .list-cell:filled:even {
     -fx-background-color: derive(-main-colour, -0%);
 }
@@ -113,10 +134,7 @@
 .list-cell:filled:odd {
     -fx-background-color: derive(-main-colour, 50%);
 }
-
-.list-cell:filled:selected {
-    -fx-background-color: derive(-main-colour, -25%);
-}
+*/
 
 .list-cell:filled:selected #cardPane {
     -fx-border-color: -main-colour;
@@ -315,9 +333,27 @@
 }
 
 #cardPane {
-    -fx-background-color: transparent;
-    -fx-border-width: 0;
+    -fx-border-width: 1;
 }
+
+/*
+.customerCard {
+    -fx-label-padding: 0 0 0 0;
+    -fx-graphic-text-gap : 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: derive(-main-colour, -0%);
+    -fx-border-color: -borders-colour;
+}
+
+.runnerCard {
+    -fx-label-padding: 0 0 0 0;
+    -fx-graphic-text-gap : 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: derive(-main-colour, 50%);
+    -fx-border-color: -borders-colour;
+}
+*/
+
 
 #commandTypeLabel {
     -fx-font-size: 11px;
